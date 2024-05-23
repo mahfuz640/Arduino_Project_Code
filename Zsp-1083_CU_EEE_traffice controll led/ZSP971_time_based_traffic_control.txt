@@ -1,0 +1,172 @@
+int ledr1 = 2;
+int ledr2 = 3;
+int ledr3 = 4;
+int ledr4 = 5;
+int ledg1 = 6;
+int ledg2 = 7;
+int ledg3 = 8;
+int ledg4 = 9;
+int ledy1 = 10;
+int ledy2 = 11;
+int ledy3 = 12;
+int ledy4 = 13;
+int count = 0;
+int count1 = 0;
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+pinMode(ledr1,OUTPUT);
+pinMode(ledr2,OUTPUT);
+pinMode(ledr3,OUTPUT);
+pinMode(ledr4,OUTPUT);
+pinMode(ledg1,OUTPUT);
+pinMode(ledg2,OUTPUT);
+pinMode(ledg3,OUTPUT);
+pinMode(ledg4,OUTPUT);
+pinMode(ledy1,OUTPUT);
+pinMode(ledy2,OUTPUT);
+pinMode(ledy3,OUTPUT);
+pinMode(ledy4,OUTPUT); 
+
+}
+void loop() {
+delay(2000);
+ count1 = count++;
+   Serial.println(count1);
+
+if(count1>0 && count1<4 ){
+   digitalWrite(ledg1,HIGH);
+   digitalWrite(ledg2,LOW);
+   digitalWrite(ledg3,LOW);
+   digitalWrite(ledg4,LOW);
+      digitalWrite(ledr1,LOW);
+      digitalWrite(ledr2,HIGH);
+      digitalWrite(ledr3,HIGH);
+      digitalWrite(ledr4,HIGH);
+         digitalWrite(ledy1,LOW);
+         digitalWrite(ledy2,LOW);
+         digitalWrite(ledy3,LOW);
+         digitalWrite(ledy4,LOW);
+
+ }
+
+if(count1>4 && count1<7 ){
+   digitalWrite(ledg1,LOW);
+   digitalWrite(ledg2,LOW);
+   digitalWrite(ledg3,LOW);
+   digitalWrite(ledg4,LOW);
+      digitalWrite(ledr1,LOW);
+      digitalWrite(ledr2,HIGH);
+      digitalWrite(ledr3,HIGH);
+      digitalWrite(ledr4,HIGH);
+         digitalWrite(ledy1,HIGH);
+         digitalWrite(ledy2,LOW);
+         digitalWrite(ledy3,LOW);
+         digitalWrite(ledy4,LOW);
+  }
+
+if(count1>7 && count1<11 ){
+   digitalWrite(ledg1,LOW);
+   digitalWrite(ledg2,HIGH);
+   digitalWrite(ledg3,LOW);
+   digitalWrite(ledg4,LOW);
+      digitalWrite(ledr1,HIGH);
+      digitalWrite(ledr2,LOW);
+      digitalWrite(ledr3,HIGH);
+      digitalWrite(ledr4,HIGH);
+         digitalWrite(ledy1,LOW);
+         digitalWrite(ledy2,LOW);
+         digitalWrite(ledy3,LOW);
+         digitalWrite(ledy4,LOW);
+         
+
+  }
+
+if(count1>11 && count1<14 ){
+   digitalWrite(ledg1,LOW);
+   digitalWrite(ledg2,LOW);
+   digitalWrite(ledg3,LOW);
+   digitalWrite(ledg4,LOW);
+      digitalWrite(ledr1,HIGH);
+      digitalWrite(ledr2,LOW);
+      digitalWrite(ledr3,HIGH);
+      digitalWrite(ledr4,HIGH);
+         digitalWrite(ledy1,LOW);
+         digitalWrite(ledy2,HIGH);
+         digitalWrite(ledy3,LOW);
+         digitalWrite(ledy4,LOW);
+         
+
+  }
+
+if(count1>14 && count1<18 ){
+   digitalWrite(ledg1,LOW);
+   digitalWrite(ledg2,LOW);
+   digitalWrite(ledg3,HIGH);
+   digitalWrite(ledg4,LOW);
+      digitalWrite(ledr1,HIGH);
+      digitalWrite(ledr2,HIGH);
+      digitalWrite(ledr3,LOW);
+      digitalWrite(ledr4,HIGH);
+         digitalWrite(ledy1,LOW);
+         digitalWrite(ledy2,LOW);
+         digitalWrite(ledy3,LOW);
+         digitalWrite(ledy4,LOW);
+     
+
+  }
+
+if(count1>18 && count1<21 ){
+   digitalWrite(ledg1,LOW);
+   digitalWrite(ledg2,LOW);
+   digitalWrite(ledg3,LOW);
+   digitalWrite(ledg4,LOW);
+      digitalWrite(ledr1,HIGH);
+      digitalWrite(ledr2,HIGH);
+      digitalWrite(ledr3,LOW);
+      digitalWrite(ledr4,HIGH);
+         digitalWrite(ledy1,LOW);
+         digitalWrite(ledy2,LOW);
+         digitalWrite(ledy3,HIGH);
+         digitalWrite(ledy4,LOW);
+     
+
+  }
+
+if(count1>21 && count1<25 ){
+   digitalWrite(ledg1,LOW);
+   digitalWrite(ledg2,LOW);
+   digitalWrite(ledg3,LOW);
+   digitalWrite(ledg4,HIGH);
+      digitalWrite(ledr1,HIGH);
+      digitalWrite(ledr2,HIGH);
+      digitalWrite(ledr3,HIGH);
+      digitalWrite(ledr4,LOW);
+         digitalWrite(ledy1,LOW);
+         digitalWrite(ledy2,LOW);
+         digitalWrite(ledy3,LOW);
+         digitalWrite(ledy4,LOW);
+
+  }
+
+if(count1>25 && count1<28 ){
+   digitalWrite(ledg1,LOW);
+   digitalWrite(ledg2,LOW);
+   digitalWrite(ledg3,LOW);
+   digitalWrite(ledg4,LOW);
+      digitalWrite(ledr1,HIGH);
+      digitalWrite(ledr2,HIGH);
+      digitalWrite(ledr3,HIGH);
+      digitalWrite(ledr4,LOW);
+         digitalWrite(ledy1,LOW);
+         digitalWrite(ledy2,LOW);
+         digitalWrite(ledy3,LOW);
+         digitalWrite(ledy4,HIGH);
+
+  count=0;
+  count1=0;
+  delay(3000);
+  
+  }
+ 
+}
